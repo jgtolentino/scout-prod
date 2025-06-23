@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ErrorBoundary } from '@/components/ui/error-boundary'
 import { DeploymentStatus } from '@/components/DeploymentStatus'
+import { Analytics } from '@/components/Analytics'
 import Overview from '@/pages/Overview'
 import TransactionTrends from '@/pages/TransactionTrends'
 import ProductMix from '@/pages/ProductMix'
@@ -105,6 +106,9 @@ function App() {
 
             {/* Deployment Status Component */}
             <DeploymentStatus />
+            
+            {/* Analytics */}
+            <Analytics />
           </div>
         </Router>
       </ErrorBoundary>

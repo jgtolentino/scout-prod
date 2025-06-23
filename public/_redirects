@@ -1,0 +1,5 @@
+# API routes to Azure backend
+/api/* https://scout-analytics-api.azurewebsites.net/api/:splat 200!
+
+# SPA routing fallback
+/* /index.html 200

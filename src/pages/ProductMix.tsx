@@ -29,7 +29,7 @@ const ProductMix: React.FC = () => {
         setError(null)
         
         const filters = getActiveFilters()
-        const response = await apiService.getProductMixData({ ...filters, level: viewType })
+        const response = await apiService.getProductData({ ...filters, level: viewType })
         
         if (response.status === 200) {
           setData(response.data?.products || [])
